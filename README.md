@@ -1,71 +1,50 @@
-Ecommerce Customer Retention Analysis
+# Ecommerce Customer Retention Analysis
+A complete analytical and machine learning project based on the Olist Brazilian E-commerce dataset.  
+Includes cohort analysis, RFM segmentation, churn labeling, churn prediction using XGBoost, and SHAP-based explainability.
 
-This repository contains a complete analysis of customer retention patterns using the Olist Brazilian E-commerce dataset. The project includes cohort analysis, RFM segmentation, churn labeling, and a machine learning model to predict customer churn.
+---
 
-Project Overview
+## Project Banner (Optional)
+Add an image here if you want a banner for your project:
 
-This project aims to understand customer purchasing behavior and identify factors influencing churn. Using customer and order-level data from the Olist dataset, the workflow includes data preparation, retention analysis, segmentation, and churn prediction using machine learning.
+![Project Banner](imagesbanner.png)
 
-Tools and Technologies
+---
 
-Python (Pandas, NumPy)
+## Badges (Optional)
 
-Visualization: Matplotlib, Seaborn, Plotly
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![XGBoost](https://img.shields.io/badge/Model-XGBoost-green)
 
-Machine Learning: XGBoost
+---
 
-Model Explainability: SHAP
+## Overview
 
-Environment: Google Colab
+This project explores customer retention patterns in an e-commerce environment using the Olist dataset.  
+It combines descriptive analytics, customer segmentation, and predictive modeling to answer:
 
-Project Workflow
-1. Data Preparation
+**Which customer behavior patterns drive churn, and how can we predict churn?**
 
-Loaded 9 CSV files from the Olist Kaggle dataset.
+---
 
-Cleaned orders data and removed undelivered orders.
+## Features
 
-Merged orders with customer information to retrieve customer_unique_id.
+- Complete data cleaning and preparation  
+- Cohort analysis for monthly retention  
+- RFM segmentation for customer insights  
+- Churn labeling using inactivity threshold  
+- Churn prediction using XGBoost  
+- SHAP explainability for feature contribution  
+- Visualizations (heatmaps, distributions, SHAP plots)  
 
-2. Cohort Analysis
+---
 
-Created monthly cohorts based on customer first purchase month.
+## Tools and Technologies
 
-Computed retention rates for each cohort.
+- Python (Pandas, NumPy)
+- Matplotlib, Seaborn, Plotly
+- XGBoost
+- SHAP
+- Google Colab
 
-Visualized retention using a cohort heatmap.
-
-3. RFM Analysis
-
-Calculated RFM (Recency, Frequency, Monetary) features for each unique customer.
-
-Metric	Description
-Recency	Days since the customer's last purchase
-Frequency	Number of orders made
-Monetary	Total spend by the customer
-
-These features were used as inputs for the churn prediction model.
-
-4. Churn Labeling
-
-A customer is labeled as churned if they have not placed an order in the last 90 days.
-
-Churn labels:
-
-1: Churned
-
-0: Active
-
-5. Churn Prediction Model
-
-Implemented an XGBoost Classifier for churn prediction.
-
-Performed train-test split.
-
-Evaluated model performance using a classification report.
-
-Used SHAP values to interpret feature importance and understand what drives churn.
-
-Key question answered:
-
-Which customer behavior features increase churn probability?
+---
