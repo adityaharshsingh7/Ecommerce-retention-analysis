@@ -4,14 +4,13 @@ Includes cohort analysis, RFM segmentation, churn labeling, churn prediction usi
 
 ---
 
-## Project Banner (Optional)
-Add an image here if you want a banner for your project:
+## Project Banner
 
 ![Project Banner](imagesbanner.png)
 
 ---
 
-## Badges (Optional)
+## Badges
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-green)
